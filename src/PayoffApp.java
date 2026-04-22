@@ -13,6 +13,11 @@ public class PayoffApp {
         System.out.println(amex);
 
 
+        CreditCard discover = new CreditCard("Discover IT", 35.7, 6000);
+
+        amex.compareTo(discover);
+
+
         List<Double> aprs = new ArrayList<>();
 
         List<CreditCard> cards = new ArrayList<>();
@@ -44,7 +49,7 @@ public class PayoffApp {
         }
 
         Collections.sort(aprs, Collections.reverseOrder());
-       // Collections.sort(cards());
+       Collections.sort(cards, Collections.reverseOrder());
 
 
 
